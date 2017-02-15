@@ -18,6 +18,7 @@ class StaticAnalyzerAndroid(models.Model):
     ANDROVER = models.CharField(max_length=50)
     MANIFEST_ANAL = models.TextField()
     PERMISSIONS = models.TextField()
+    BIN_ANALYSIS = models.TextField()
     FILES = models.TextField()
     CERTZ = models.TextField()
     ACTIVITIES = models.TextField()
@@ -71,6 +72,7 @@ class StaticAnalyzerIPA(models.Model):
     FILES = models.TextField()
     SFILESX = models.TextField()
     STRINGS = models.TextField()
+    PERMISSIONS = models.TextField()
 
 
 class StaticAnalyzerIOSZIP(models.Model):
@@ -96,6 +98,7 @@ class StaticAnalyzerIOSZIP(models.Model):
     URLnFile = models.TextField()
     DOMAINS = models.TextField()
     EmailnFile = models.TextField()
+    PERMISSIONS = models.TextField()
 
 
 class StaticAnalyzerWindows(models.Model):
